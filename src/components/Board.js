@@ -5,7 +5,9 @@ import { connect } from "react-redux";
 
 class Board extends React.Component {
   
+
   renderSquare(i) {
+    console.log(this.props);
     return (
       <Square
         value={this.props.squares[i]}
