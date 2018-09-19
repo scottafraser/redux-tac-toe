@@ -1,7 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import Square from './Square'
+import { connect } from "react-redux";
+
 
 class Board extends React.Component {
+  
   renderSquare(i) {
     return (
       <Square
@@ -34,4 +37,4 @@ class Board extends React.Component {
   }
 }
 
-export default Board;
+export default connect()(Board);
